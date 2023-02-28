@@ -1,15 +1,14 @@
-const myGlobal = 0;
-
-function myFunction() {
-  const myNumber = 1;
-  console.log(myGlobal);
-  return function (){
-    const inner = 2;
-    console.log(myGlobal, myNumber);
-    return function (){
-      console.log(myGlobal,myNumber,inner);
+function sumWithClosure(firstNum) {
+  return function(b) {
+    if (typeof b === 'undefined') {
+      console.log(firstNum); // return firstNum;
+    } else {
+      console.log(firstNum + b); // return firstNum + b;
     }
-  }
+  };
 }
 
-myFunction()()();
+// miAcancia = sumWithClosure(2);
+// miAcancia(3);
+
+sumWithClosure(2);

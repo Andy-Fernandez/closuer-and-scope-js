@@ -8,4 +8,7 @@ function sumWithClosure(firstNum) {
   };
 }
 
-sumWithClosure(2)(3);
+// miAcancia = sumWithClosure(2);
+// miAcancia(3);
+
+sumWithClosure(2)();

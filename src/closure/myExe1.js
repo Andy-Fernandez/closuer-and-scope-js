@@ -7,17 +7,13 @@ function init() {
 }
 
 function makeAdder(x) {
-  if (x === undefined) {
-    x = 12;
-    return x;
-  }
   return function(y) {
-    if (x === undefined) {
-      x = 0;
-      y = 0;
+    if (!y) {
+      return x;
+    } else {
+      return x + y;
     }
-    return x + y;
   };
 }
 
-console.log(makeAdder);
+console.log(makeAdder(5)());

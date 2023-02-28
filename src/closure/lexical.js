@@ -18,8 +18,6 @@ function myFunction() {
 
 myFunction();
 
-const myGlobal = 0;
-
 function myFunction() {
   const myNumber = 1;
   console.log(myGlobal);
