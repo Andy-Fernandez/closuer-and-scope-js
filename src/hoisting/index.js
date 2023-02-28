@@ -1,6 +1,6 @@
 // elmo es undefined porque la variable se declara después de ser utilizada
 // se supone que por hoisting, la variable se declara al inicio del archivo
-// const elmo;
+// var elmo;
 console.log(elmo);
 var elmo = 'Elmo';
 
